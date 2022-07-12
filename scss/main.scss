@@ -1,0 +1,571 @@
+@import "variables";
+@import "mixins";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Montserrat:wght@700&display=swap");
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $bgColor;
+    font-family: "Inter";
+}
+
+.container {
+    @include fullContainerWidth;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    margin-top: 20px;
+
+    nav {
+        display: flex;
+        gap: 30px;
+        @include mainFont;
+
+        a {
+            color: $mainColor;
+        }
+
+        select {
+            background-color: $bgColor;
+        }
+
+        span{
+            color: $mainColor;
+        }
+    }
+}
+
+#switchMode{
+    background-color: $bgColor;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+}
+
+.white__href {
+    color: $secondaryColor;
+}
+
+.wrapper__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 73px;
+    @include headersFont;
+}
+
+.wrapper__header__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+    align-items: center;
+
+    &-text {
+        @include mainTextWidth;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+
+        a {
+            @include smallButton;
+
+            &:hover {
+                @include buttonHover;
+            }
+        }
+    }
+}
+
+p {
+    @include mainFont;
+}
+
+.company {
+    margin-top: 140px;
+}
+
+.wrapper__company {
+    &__content {
+        margin-top: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__mainText {
+            &__info {
+                margin-top: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 48px;
+                &-item {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                }
+            }
+        }
+        &__secondaryText {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: flex-start;
+            max-width: 580px;
+            width: 100%;
+            margin-top: 60px;
+            a {
+                @include smallButton;
+
+                &:hover {
+                    @include buttonHover;
+                }
+            }
+        }
+    }
+}
+
+h2 {
+    @include headersFont;
+    font-size: 40px;
+}
+
+.mark {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 51px;
+    color: $mainColor;
+}
+
+.learn-about-us {
+    margin-top: 220px;
+}
+
+.wrapper__learn-about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 170px;
+
+    &-mainText {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &-secondaryText {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        a {
+            @include smallButton;
+
+            &:hover {
+                @include buttonHover;
+            }
+        }
+    }
+
+    img {
+        margin-top: -50px;
+    }
+}
+
+.wrapper__our-brends {
+    margin-top: 140px;
+
+    &-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+        p {
+            font-weight: 300;
+            max-width: 580px;
+            width: 100%;
+        }
+    }
+
+    &-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.wrapper__news {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 140px;
+    &-col1 {
+        max-width: 580px;
+        width: 100%;
+        &-head {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            margin-bottom: 10px;
+        }
+        &-main {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            a {
+                font-weight: 700;
+                font-size: 18px;
+                color: $mainColor;
+            }
+        }
+    }
+
+    &-col2 {
+        max-width: 580px;
+        width: 100%;
+
+        img {
+            margin-top: 52px;
+        }
+    }
+}
+
+.date {
+    color: $footerFontColor;
+    font-weight: 700;
+}
+
+h3 {
+    color: $mainColor;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+.form {
+    background-color: $formColor;
+    margin-top: 140px;
+    padding: 66px 220px;
+}
+
+.wrapper__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+        text-align: center;
+    }
+
+    &-submit {
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+        max-width: 380px;
+        width: 100%;
+        a {
+            @include smallButton;
+            &:hover {
+                @include buttonHover;
+            }
+        }
+    }
+}
+
+.wrapper__answers {
+    margin-top: 140px;
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__main {
+        margin-top: 40px;
+
+        &-item {
+            align-items: center;
+        }
+    }
+}
+
+hr {
+    border: 1px solid $mainColor;
+    background-color: $mainColor;
+}
+
+.accordion {
+    cursor: pointer;
+    padding: 30px 0;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    border: none;
+    transition: 0.4s;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 22px;
+    color: $mainColor;
+    background-color: $bgColor;
+}
+
+.active,
+.accordion:hover {
+    border: none;
+}
+
+.accordion:after {
+    content: "\002B";
+    color: #777;
+    font-weight: 500;
+    float: right;
+    font-size: 30px;
+}
+
+.active:after {
+    content: "\00D7";
+}
+
+.panel {
+    padding: 40px 0;
+    display: none;
+    overflow: hidden;
+    color: $footerFontColor;
+    max-width: 780px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.wrapper__footer {
+    margin-top: 140px;
+    padding-bottom: 60px;
+
+    &__content {
+        margin-top: 50px;
+        display: flex;
+
+        &__categories {
+            margin-left: 120px;
+            display: flex;
+            gap: 56px;
+            &-item {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                p {
+                    color: $footerFontColor;
+                }
+
+                a {
+                    color: $mainColor;
+                }
+            }
+        }
+
+        &__socials {
+            display: flex;
+            gap: 14px;
+            margin-left: 410px;
+        }
+    }
+}
+
+.wrapper__head-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 660px;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.wrapper__cola-energy__first {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    &-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        margin-bottom: 45px;
+
+        h2 {
+            @include mainTextWidth;
+        }
+    }
+
+    &-column {
+        margin-bottom: 30px;
+        display: flex;
+        gap: 200px;
+        align-items: center;
+        &-item {
+            ul {
+                @include mainFont;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                margin-bottom: 30px;
+                li {
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                }
+            }
+
+            &-consist {
+                margin-top: 30px;
+                @include mainTextWidth;
+
+                p {
+                    margin-top: 10px;
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+.wrapper__cola-energy__second {
+    margin-top: 100px;
+    &-column {
+        display: flex;
+        margin: 30px 0px;
+        gap: 355px;
+        hr {
+        }
+        &-item {
+            ul {
+                color: $mainColor;
+                margin-top: 10px;
+                padding-left: 30px;
+                line-height: 135%;
+            }
+        }
+    }
+
+    &-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        margin-bottom: 40px;
+        h2 {
+            @include mainTextWidth;
+        }
+    }
+}
+
+.second__column-text {
+    max-width: 524px;
+    width: 100%;
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cola-in-ukraine {
+    background-color: $formColor;
+}
+
+.wrapper__cola-in-ukraine {
+    padding: 50px 143px 50px 47px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    &-text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h3 {
+            @include headersFont;
+        }
+    }
+}
+
+.header__learn-about-us-img {
+    margin-top: 30px;
+}
+
+.wrapper__contacts {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    &-text {
+        &-head {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            @include mainTextWidth;
+        }
+
+        &-main {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            @include mainTextWidth;
+
+            p {
+                font-family: "Montserrat";
+                font-weight: 500;
+                font-size: 22px;
+                color: $footerFontColor;
+            }
+        }
+
+        &-footer {
+            margin-top: 30px;
+
+            &-head {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            &-main{
+                margin-top: 30px;
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                
+                a{
+                    color: #FFFFFF;
+                }
+            }
+
+            span {
+                font-size: 18px;
+                color: $footerFontColor;
+                max-width: 400px;
+                width: 100%;
+            }
+        }
+    }
+}

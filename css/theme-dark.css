@@ -1,0 +1,157 @@
+body {
+    background-color: #121212;
+}
+
+header nav {
+    color: #737373;
+}
+
+header nav a {
+    color: #737373;
+}
+
+header nav select {
+    background-color: #121212;
+}
+
+header nav span {
+    color: #737373;
+}
+
+#switchMode {
+    background-color: #121212;
+}
+
+.white__href {
+    color: #fafafa;
+}
+
+
+h1 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#7a7a7a));
+    background-image: linear-gradient(180deg, #fafafa 0%, #7a7a7a 100%);
+}
+
+.wrapper__header__content-text a {
+    color: #fafafa;
+    border: 2px solid #fafafa;
+}
+
+.wrapper__header__content-text a:hover {
+    background-color: #fafafa;
+    color: #121212;
+}
+
+p {
+    color: #737373;
+}
+
+.wrapper__company__content__secondaryText a {
+    color: #fafafa;
+    border: 2px solid #fafafa;
+}
+
+.wrapper__company__content__secondaryText a:hover {
+    background-color: #fafafa;
+    color: #121212;
+}
+
+h2 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#7a7a7a));
+    background-image: linear-gradient(180deg, #fafafa 0%, #7a7a7a 100%);
+}
+
+.mark {
+    color: #737373;
+}
+
+.wrapper__learn-about-us-secondaryText a {
+    color: #fafafa;
+    border: 2px solid #fafafa;
+}
+
+.wrapper__learn-about-us-secondaryText a:hover {
+    background-color: #fafafa;
+    color: #121212;
+}
+
+.wrapper__news-col1-main a {
+    color: #737373;
+}
+
+.date {
+    color: #a6a6a6;
+}
+
+h3 {
+    color: #737373;
+}
+
+.form {
+    background-color: #2b2b2b;
+}
+
+.wrapper__form-submit a {
+    color: #fafafa;
+    border: 2px solid #fafafa;
+}
+
+.wrapper__form-submit a:hover {
+    background-color: #fafafa;
+    color: #121212;
+}
+
+hr {
+    border: 1px solid #737373;
+    background-color: #737373;
+}
+
+.accordion {
+    color: #737373;
+    background-color: #121212;
+}
+
+.accordion:after {
+    color: #777;
+}
+
+.panel {
+    color: #a6a6a6;
+}
+
+.wrapper__footer__content__categories-item p {
+    color: #a6a6a6;
+}
+
+.wrapper__footer__content__categories-item a {
+    color: #737373;
+}
+
+.wrapper__cola-energy__first-column-item ul {
+    color: #737373;
+}
+
+.wrapper__cola-energy__second-column-item ul {
+    color: #737373;
+}
+
+.cola-in-ukraine {
+    background-color: #2b2b2b;
+}
+
+.wrapper__cola-in-ukraine-text h3 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#7a7a7a));
+    background-image: linear-gradient(180deg, #fafafa 0%, #7a7a7a 100%);
+}
+
+.wrapper__contacts-text-main p {
+    color: #a6a6a6;
+}
+
+.wrapper__contacts-text-footer-main a {
+    color: #FFFFFF;
+}
+
+.wrapper__contacts-text-footer span {
+    color: #a6a6a6;
+}

@@ -1,0 +1,41 @@
+@mixin fullContainerWidth {
+    max-width: 1200px;
+    width: 100%;
+}
+
+@mixin mainTextWidth {
+    max-width: 580px;
+    width: 100%;
+}
+
+@mixin mainFont {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 135%;
+    color: #737373;
+}
+
+@mixin headersFont {
+    font-weight: 700;
+    background-image: $gradientColor;
+    background-clip: text;
+    text-transform: uppercase;
+    color: transparent;
+    font-family: "Montserrat", sans-serif;
+}
+
+@mixin smallButton {
+    display: block;
+    font-weight: 500;
+    color: $secondaryColor;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid $secondaryColor;
+    padding: 18px 32px;
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin buttonHover {
+    background-color: $secondaryColor;
+    color: $bgColor;
+}
